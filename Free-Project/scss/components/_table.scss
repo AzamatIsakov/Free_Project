@@ -1,0 +1,391 @@
+@include xs {
+  .table {
+    display: none;
+  }
+
+  .guidline-stages {
+    &-table-box {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 65px;
+      .line {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    &-title {
+      margin-top: 100px;
+      font: 400 normal 35px/1 "20 Kopeek";
+      &-v-text {
+        margin-top: 12px;
+        font: 400 normal 20px/1.1 "20 Kopeek";
+      }
+    }
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-cell {
+      width: 130px;
+      font: 400 normal 12px/1.296 "20 Kopeek";
+      &-title {
+        font: 600 normal 15px/1.4 "20 Kopeek";
+      }
+      &-text {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .guidline-stages {
+    &-table-box {
+      margin-top: 40px;
+      gap: 50px;
+      .line {
+        gap: 20px;
+      }
+    }
+    &-title {
+      margin-top: 90px;
+      &-v-text {
+        margin-top: 15px;
+      }
+    }
+    &-content {
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+    &-cell {
+      width: 150px;
+      &-title {
+        font: 600 normal 16px/1.4 "20 Kopeek";
+      }
+      &-text {
+        margin-top: 18px;
+      }
+    }
+  }
+}
+
+@include md {
+  .table {
+    display: table;
+  }
+  .col {
+    &-first {
+      display: none;
+    }
+    &-second {
+      width: 210px;
+    }
+    &-third {
+      width: 242px;
+      border: 4px solid $primary-blue;
+      &-cell {
+        color: $primary-blue !important;
+      }
+    }
+    &-fourth {
+      width: 235px;
+    }
+  }
+  .bd {
+    &-top {
+      border-radius: 10px 10px 0 0;
+    }
+    &-bottom {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  .title {
+    &-top {
+      font: 400 normal 34px/1.1 "20 Kopeek";
+      color: $dark-grey;
+      // padding: 15px 10px 6px 19px;
+      td {
+        vertical-align: text-top;
+        padding: 15px 16px;
+        &:nth-child(2) {
+          padding-left: 18px;
+        }
+        &:nth-child(4) {
+          padding-left: 14px;
+        }
+      }
+    }
+    &-left {
+      display: none;
+    }
+    &-hor {
+      display: table-cell;
+      padding-left: 18px;
+      border-radius: 5px;
+      text-align: start;
+      background-color: $primary-blue;
+      font: 400 normal 20px/1.1 "20 Kopeek";
+      color: $white;
+    }
+  }
+
+  .table {
+    margin-top: 105px;
+
+    &-text {
+      vertical-align: top;
+      font: 400 normal 14px/18px "20 Kopeek";
+    }
+  }
+
+  .second-col {
+    padding: 18px;
+  }
+  .third-col {
+    padding: 18px;
+  }
+  .fourth-col {
+    padding: 18px 14px;
+  }
+
+  .guidline-stages {
+    &-table-box {
+      margin-top: 40px;
+      gap: 50px;
+      .line {
+        gap: 18px;
+      }
+    }
+    &-title {
+      margin-top: 80px;
+      font: 400 normal 45px/1 "20 Kopeek";
+      &-v-text {
+        margin-top: 17px;
+        font: 400 normal 20px/1.1 "20 Kopeek";
+      }
+    }
+    &-cell {
+      width: 166px;
+      font: 400 normal 14px/1.296 "20 Kopeek";
+      &-title {
+        font: 600 normal 16px/1.4 "20 Kopeek";
+        padding-right: 15px;
+      }
+      &-text {
+        margin-top: 18px;
+      }
+    }
+  }
+}
+
+@include lg {
+  .col {
+    &-first {
+      display: table-column;
+      background-color: $primary-blue;
+      width: 146px;
+    }
+    &-second {
+      width: 251px;
+    }
+    &-third {
+      width: 243px;
+      border: 4px solid $primary-blue;
+      &-cell {
+        color: $primary-blue !important;
+      }
+    }
+    &-fourth {
+      width: 236px;
+    }
+  }
+  .bd {
+    &-top {
+      border-radius: 10px 10px 0 0;
+    }
+    &-bottom {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  .title {
+    &-top {
+      font: 400 normal 34px/1.1 "20 Kopeek";
+      color: $dark-grey;
+      // padding: 15px 10px 6px 19px;
+      td {
+        vertical-align: text-top;
+        padding: 14px 18px 6px;
+        &:nth-child(2) {
+          padding-left: 30px;
+        }
+        &:nth-child(4) {
+          padding-left: 15px;
+        }
+      }
+    }
+    &-left {
+      display: table-cell;
+      vertical-align: top;
+      padding: 26px 15px;
+      padding-right: 20px;
+      text-align: start;
+      font: 400 normal 20px/1.1 "20 Kopeek";
+      color: $white;
+    }
+    &-hor {
+      display: none;
+      padding-left: 18px;
+      border-radius: 5px;
+      text-align: start;
+      background-color: $primary-blue;
+      font: 400 normal 20px/1.1 "20 Kopeek";
+      color: $white;
+    }
+  }
+
+  .table {
+    margin-top: 135px;
+
+    &-text {
+      vertical-align: top;
+      font: 400 normal 14px/18px "20 Kopeek";
+    }
+  }
+
+  .second-col {
+    padding: 26px 12px 26px 30px;
+  }
+  .third-col {
+    padding: 26px 15px 26px 18px;
+  }
+  .fourth-col {
+    padding: 26px 12px 26px 15px;
+  }
+
+  .guidline-stages {
+    &-table-box {
+      margin-top: 87px;
+      gap: 60px;
+      .line {
+        flex-direction: row;
+      }
+    }
+
+    &-title {
+      margin-top: 100px;
+      &-v-text {
+        margin-top: 26px;
+        font: 400 normal 20px/1.1 "20 Kopeek";
+      }
+    }
+    &-content {
+      gap: 40px;
+    }
+  }
+}
+
+@include xl {
+  .col {
+    &-first {
+      background-color: $primary-blue;
+      width: 160px;
+    }
+    &-second {
+      width: 296px;
+    }
+    &-third {
+      width: 289px;
+      border: 4px solid $primary-blue;
+      &-cell {
+        color: $primary-blue !important;
+      }
+    }
+    &-fourth {
+      width: 375px;
+    }
+  }
+  .bd {
+    &-top {
+      border-radius: 10px 10px 0 0;
+    }
+    &-bottom {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  .title {
+    &-top {
+      font: 400 normal 38px/1.1 "20 Kopeek";
+      color: $dark-grey;
+      // padding: 15px 10px 6px 19px;
+      td {
+        vertical-align: text-top;
+        padding: 15px 30px 6px 19px;
+        &:nth-child(2) {
+          padding-left: 30px;
+        }
+        &:nth-child(4) {
+          padding-left: 15px;
+        }
+      }
+    }
+    &-left {
+      vertical-align: top;
+      padding: 20px 10px;
+      text-align: start;
+      font: 400 normal 26px/1.1 "20 Kopeek";
+      color: $white;
+    }
+    &-hor {
+      display: none;
+    }
+  }
+
+  .table {
+    margin-top: 165px;
+    &-text {
+      vertical-align: top;
+      font: 400 normal 15px/1.267 "20 Kopeek";
+    }
+  }
+
+  .second-col {
+    padding: 26px 6px 26px 30px;
+  }
+  .third-col {
+    padding: 26px 10px 26px 19px;
+  }
+  .fourth-col {
+    padding: 26px 100px 26px 15px;
+  }
+
+  .guidline-stages {
+    &-table-box {
+      margin-top: 80px;
+    }
+    &-title {
+      margin-top: 150px;
+      font: 400 normal 55px/1 "20 Kopeek";
+      &-v-text {
+        margin-top: 22px;
+        font: 400 normal 26px/1.1 "20 Kopeek";
+      }
+    }
+
+    &-content {
+      gap: 30px;
+    }
+    &-cell {
+      width: 166px;
+      font: 400 normal 15px/1.296 "20 Kopeek";
+      &-title {
+        font: 600 normal 18px/1.4 "20 Kopeek";
+        padding-right: 0;
+      }
+      &-text {
+        margin-top: 15px;
+      }
+    }
+  }
+}

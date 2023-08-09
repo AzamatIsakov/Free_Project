@@ -1,0 +1,2786 @@
+@font-face {
+  font-family: "20 Kopeek";
+  src: url(/assets/fonts/20_Kopeek_Book.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  color: #000000;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 30px;
+}
+
+@media (min-width: 360px) {
+  .col-xs-1 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-xs-2 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-xs-3 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-xs-4 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .container-xs {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .col-sm-1 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-sm-2 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-sm-3 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-sm-4 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-sm-5 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-sm-6 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .container-sm {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 510px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-1 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-md-2 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-md-3 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-md-4 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-md-5 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-md-6 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .container-md {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-1 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-lg-4 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-lg-7 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-lg-10 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .container-lg {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-xl-2 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-xl-3 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-xl-4 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-xl-5 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-xl-6 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-xl-7 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-xl-8 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-xl-9 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-xl-10 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-xl-11 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-xl-12 {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .container-xl {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+.ml-a {
+  margin-left: auto;
+}
+
+.ml-2 {
+  margin-left: 30px;
+}
+
+.m-a {
+  margin: 0 auto;
+}
+
+html {
+  font-family: "20 Kopeek";
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+}
+
+.price-content-link {
+  color: #ffffff;
+}
+
+@media (min-width: 360px) {
+  .header {
+    height: 640px;
+    background-image: url(/assets/images/bg_header_360.jpeg);
+    background-size: cover;
+  }
+  .header-content {
+    margin-top: 49px;
+  }
+  .header-title {
+    font: 400 normal 30px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-text {
+    margin-top: 10px;
+    font: 400 normal 20px/110% "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-modal-form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(24, 24, 24, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .header-modal-form-box .modal-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 298px;
+    height: 374px;
+    background-color: #ffffff;
+    padding: 0 17px;
+  }
+  .header-modal-form-box .modal-form-text {
+    margin-top: 21px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .intro-title {
+    margin-top: 56px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .intro-content {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .intro-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .brand-style-title {
+    margin-top: 90px;
+    font: 400 normal 35px/1 "20 Kopeek";
+  }
+  .brand-main-elems-container {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    counter-reset: item;
+  }
+  .brand-main-elems-item {
+    padding-left: 80px;
+    position: relative;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .brand-main-elems-item::before {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    content: counter(item);
+    counter-increment: item;
+    font-size: 35px;
+  }
+  .brand-main-elems-comment {
+    margin-top: 20px;
+    width: 210px;
+    font: 400 normal 12px/16px "20 Kopeek";
+  }
+  .price-title {
+    margin-top: 140px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .price-content {
+    margin-top: 15px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .price-content-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .price-content-text:not(:first-child) {
+    margin-top: 21px;
+    position: relative;
+  }
+  .price-content-text:last-child {
+    color: #ffffff;
+  }
+  .price-content-text:last-child::before {
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    z-index: -100;
+    border-radius: 5px;
+    content: "";
+    width: 320px;
+    height: 84px;
+    background-color: #2b59c3;
+  }
+  .portfolio {
+    margin-top: 101px;
+  }
+  .portfolio-content {
+    position: relative;
+  }
+  .portfolio-content-box {
+    margin-top: 15px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 83px;
+  }
+  .portfolio-title {
+    font: 400 normal 35px/1 "20 Kopeek";
+  }
+  .portfolio-text {
+    margin-top: 11px;
+    position: absolute;
+    width: 200px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .guideline {
+    margin-top: 120px;
+  }
+  .guideline-title {
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .guideline-content-box {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+  .guideline-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+    margin-top: 24px;
+  }
+  .guideline-text:first-of-type {
+    padding-right: 14px;
+    color: #ffffff;
+  }
+  .guideline-text-title {
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    position: relative;
+    color: #ffffff;
+  }
+  .guideline-text-title::before {
+    position: absolute;
+    top: -8px;
+    left: -17px;
+    width: 320px;
+    height: 189px;
+    z-index: -100;
+    background-color: #2b59c3;
+    border-radius: 5px;
+    content: "";
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .form-title {
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .form-text {
+    margin-top: 16px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .form-sec {
+    margin-top: 90px;
+  }
+  .form-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-checkbox-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .form-checkbox-text-link {
+    color: #2b59c3;
+  }
+  .guarantee-sec {
+    display: none;
+  }
+  .footer {
+    margin-top: 90px;
+  }
+  .footer-form-box {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer-form-subtitle {
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .footer-form-input-box {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-form-checkbox-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .footer-form-checkbox-link {
+    color: #2b59c3;
+  }
+  .footer-form-list {
+    margin-top: 30px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-form-list-item a {
+    transition: 0.2s ease;
+    color: inherit;
+  }
+  .footer-form-list-item a:hover {
+    transition: 0.2s ease;
+    color: #2b59c3;
+  }
+  .footer-form-list-item a:active {
+    transition: 0.2s ease;
+    color: #224699;
+  }
+  .news-title {
+    margin-top: 90px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .news-card {
+    transition: 0.2s ease-in-out;
+    display: block;
+    background-color: #2b59c3;
+    border-radius: 10px;
+    padding: 10px 16px;
+    color: #ffffff;
+  }
+  .news-card-box {
+    margin-top: 30px;
+    align-items: normal;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .news-card-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .news-card:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .news-card:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+  .news-source {
+    margin-top: 30px;
+    font: 400 normal 12px/1.296 "20 Kopeek";
+  }
+  .author {
+    margin-top: 36px;
+    margin-bottom: 20px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .license-agreement {
+    padding-top: 90px;
+  }
+  .license-agreement-link {
+    transition: all 0.2s ease;
+    text-decoration: underline;
+    color: #000000;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .license-agreement-link:hover {
+    color: #2b59c3;
+  }
+  .license-agreement-link:active {
+    color: #224699;
+  }
+  .license-agreement-title {
+    margin-top: 60px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text {
+    margin-top: 21px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text:last-child {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 576px) {
+  .header {
+    height: 496px;
+    background-image: url(/assets/images/bg_header_576.jpeg);
+    background-size: cover;
+  }
+  .header-content {
+    margin-top: 46px;
+  }
+  .header-title {
+    font: 400 normal 30px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-text {
+    margin-top: 10px;
+    font: 400 normal 20px/110% "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-modal-form-box .modal-form {
+    width: 444px;
+    height: 359px;
+    padding: 0 33px;
+  }
+  .header-modal-form-box .modal-form-text {
+    margin-top: 28px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .intro-title {
+    margin-top: 92px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .intro-content {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .intro-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .brand-main-elems-item {
+    padding-left: 90px;
+  }
+  .brand-main-elems-comment {
+    margin-top: 10px;
+    width: 260px;
+    font: 400 normal 12px/16px "20 Kopeek";
+  }
+  .price-title {
+    margin-top: 70px;
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .price-content {
+    margin-top: 15px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .price-content-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+    padding-right: 65px;
+  }
+  .price-content-text:not(:first-child) {
+    margin-top: 21px;
+    position: relative;
+  }
+  .price-content-text:last-child {
+    color: #ffffff;
+  }
+  .price-content-text:last-child::before {
+    position: absolute;
+    top: -7px;
+    left: -15px;
+    z-index: -100;
+    border-radius: 5px;
+    content: "";
+    width: 435px;
+    height: 78px;
+    background-color: #2b59c3;
+  }
+  .portfolio {
+    margin-top: 95px;
+  }
+  .portfolio-content {
+    position: relative;
+  }
+  .portfolio-content-box {
+    margin-top: 27px;
+    padding-bottom: 101px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .portfolio-title {
+    font: 400 normal 35px/1 "20 Kopeek";
+  }
+  .portfolio-text {
+    margin-top: 17px;
+    position: absolute;
+    width: 220px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .guideline {
+    margin-top: 90px;
+  }
+  .guideline-title {
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .guideline-content-box {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .guideline-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+    margin-top: 26px;
+    padding-right: 65px;
+  }
+  .guideline-text:first-of-type {
+    color: #ffffff;
+  }
+  .guideline-text-title {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+    position: relative;
+    color: #ffffff;
+  }
+  .guideline-text-title::before {
+    position: absolute;
+    top: -9px;
+    left: -17px;
+    width: 437px;
+    height: 149px;
+    z-index: -100;
+    background-color: #2b59c3;
+    border-radius: 5px;
+    content: "";
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .form-title {
+    font: 400 normal 32px/1.1 "20 Kopeek";
+  }
+  .form-text {
+    margin-top: 16px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .form-sec {
+    margin-top: 100px;
+  }
+  .form-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-checkbox-text {
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .form-checkbox-text-link {
+    color: #2b59c3;
+  }
+  .footer-form-subtitle {
+    font: 400 normal 24px/1.1 "20 Kopeek";
+  }
+  .footer-form-input-box {
+    margin-bottom: 12px;
+  }
+  .news-title {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .news-card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .news-card-box {
+    gap: 30px;
+  }
+  .news-source {
+    margin-top: 20px;
+  }
+  .author {
+    margin-top: 45px;
+  }
+  .license-agreement-text:last-child {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    height: 1024px;
+    background-image: url(/assets/images/bg_header_768.jpeg);
+  }
+  .header-content {
+    margin-top: 206px;
+  }
+  .header-title {
+    font: 400 normal 45px/1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-text {
+    margin-top: 15px;
+    font: 400 normal 26px/110% "20 Kopeek";
+    color: #ffffff;
+  }
+  .header-modal-form-box .modal-form {
+    width: 450px;
+    height: 382px;
+    padding: 0 30px;
+  }
+  .header-modal-form-box .modal-form-text {
+    margin-top: 30px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .intro-title {
+    margin-top: 100px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .intro-content {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .intro-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .brand-style-title {
+    margin-top: 120px;
+    font: 400 normal 45px/1 "20 Kopeek";
+  }
+  .brand-main-elems-container {
+    margin-top: 43px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 0;
+    counter-reset: item;
+  }
+  .brand-main-elems-item {
+    padding-left: 38px;
+    padding-right: 70px;
+    position: relative;
+    font: 400 normal 16px/1.3 "20 Kopeek";
+  }
+  .brand-main-elems-item::before {
+    top: -7px;
+    font-size: 45px;
+  }
+  .brand-main-elems-comment {
+    margin-top: 16px;
+    width: 260px;
+    font: 400 normal 14px/18px "20 Kopeek";
+  }
+  .price-title {
+    margin-top: 120px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .price-content {
+    margin-top: 15px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .price-content-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+    padding-right: 60px;
+  }
+  .price-content-text:not(:first-child) {
+    margin-top: 22.4px;
+    position: relative;
+  }
+  .price-content-text:last-child {
+    color: #ffffff;
+  }
+  .price-content-text:last-child::before {
+    position: absolute;
+    top: -13px;
+    left: -17px;
+    z-index: -100;
+    border-radius: 5px;
+    content: "";
+    width: 585px;
+    height: 67px;
+    background-color: #2b59c3;
+  }
+  .portfolio {
+    margin-top: 133px;
+  }
+  .portfolio-content {
+    position: relative;
+  }
+  .portfolio-content-box {
+    margin-top: 0;
+    margin-top: 25px;
+    padding-bottom: 99px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 70px;
+  }
+  .portfolio-title {
+    font: 400 normal 45px/1 "20 Kopeek";
+  }
+  .portfolio-text {
+    margin-top: 1px;
+    position: absolute;
+    width: 200px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .guideline {
+    margin-top: 120px;
+  }
+  .guideline-title {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .guideline-content-box {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+  .guideline-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+    margin-top: 36px;
+    padding-right: 135px;
+  }
+  .guideline-text:first-of-type {
+    padding-right: 110px;
+  }
+  .guideline-text-title {
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    margin-top: 14px;
+  }
+  .guideline-text-title::before {
+    top: -11px;
+    left: -15px;
+    width: 495px;
+    height: 158px;
+  }
+  .form {
+    gap: 30px;
+    margin-top: 24px;
+  }
+  .form-title {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .form-text {
+    margin-top: 15px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .form-sec {
+    margin-top: 70px;
+  }
+  .form-btn-box {
+    gap: 20px;
+  }
+  .form-checkbox-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .guarantee-sec {
+    display: block;
+    position: relative;
+    margin-top: 103px;
+    height: 703px;
+    color: #ffffff;
+    background: url(/assets/images/guarantee-sec-bg-img-768.jpg) no-repeat center 0/cover;
+  }
+  .guarantee-sec-title {
+    margin-top: 32px;
+    font: 400 normal 45px/1 "20 Kopeek";
+  }
+  .guarantee-sec-card {
+    padding-left: 40px;
+    width: 140px;
+    position: relative;
+  }
+  .guarantee-sec-card-box {
+    gap: 47px 60px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+    counter-reset: item_1;
+  }
+  .guarantee-sec-card-text {
+    font: 400 normal 14px/1.296 "20 Kopeek";
+  }
+  .guarantee-sec-card::before {
+    position: absolute;
+    content: counter(item_1);
+    counter-increment: item_1;
+    font: 400 normal 45px/1 "20 Kopeek";
+    left: 0px;
+    top: -24px;
+  }
+  .guarantee-sec-card:nth-child(5) {
+    width: 323px;
+  }
+  .footer {
+    margin-top: 120px;
+  }
+  .footer-form-subtitle {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .footer-form-checkbox-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .footer-form-list {
+    margin-top: 35px;
+    font: 400 normal 26px/1.1 "20 Kopeek";
+  }
+  .news-title {
+    margin-top: 120px;
+  }
+  .news-card {
+    display: block;
+  }
+  .news-card-box {
+    align-items: start;
+    gap: 30px 20px;
+  }
+  .news-source {
+    margin-top: 25px;
+    font: 400 normal 15px/1.296 "20 Kopeek";
+  }
+  .author {
+    margin-top: 30px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .license-agreement-link {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .license-agreement-title {
+    margin-top: 70px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text {
+    margin-top: 22px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text:last-child {
+    margin-bottom: 68px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: 768px;
+    background-image: url(/assets/images/bg_header_992.jpeg);
+  }
+  .header-content {
+    margin-top: 180px;
+  }
+  .header-title {
+    font: 400 normal 45px/1 "20 Kopeek";
+    color: #000000;
+  }
+  .header-text {
+    margin-top: 15px;
+    font: 400 normal 26px/110% "20 Kopeek";
+    color: #000000;
+  }
+  .header-modal-form-box {
+    width: 100vw;
+    height: 100vh;
+  }
+  .header-modal-form-box .modal-form {
+    background-color: #ffffff;
+    padding: 0 33px;
+  }
+  .intro-title {
+    margin-top: 80px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .intro-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .intro-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .brand-main-elems-container {
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    counter-reset: item;
+  }
+  .brand-main-elems-item {
+    padding-right: 0;
+  }
+  .brand-main-elems-item::before {
+    position: absolute;
+    left: 0;
+    top: -35px;
+    content: counter(item);
+    counter-increment: item;
+    font-size: 45px;
+  }
+  .brand-main-elems-comment {
+    margin-top: 16px;
+    width: 180px;
+    font: 400 normal 14px/18px "20 Kopeek";
+  }
+  .price-title {
+    padding-left: 12px;
+  }
+  .price-content {
+    margin-top: 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .price-content-text {
+    padding-right: 0px;
+  }
+  .price-content-text:not(:first-child) {
+    margin-top: 22.4px;
+  }
+  .price-content-text:last-child::before {
+    top: -9px;
+    left: -10px;
+    width: 385px;
+    height: 85px;
+  }
+  .portfolio {
+    margin-top: 120px;
+  }
+  .portfolio-content {
+    position: relative;
+  }
+  .portfolio-content-box {
+    margin-top: 40px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  .portfolio-text {
+    margin-top: 1px;
+    position: absolute;
+    width: 220px;
+  }
+  .guideline {
+    margin-top: 120px;
+  }
+  .guideline-title {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .guideline-content-box {
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    gap: 0 30px;
+    flex-direction: row;
+  }
+  .guideline-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+    margin-top: 22px;
+    padding-right: 25px;
+  }
+  .guideline-text:first-of-type {
+    padding-right: 35px;
+  }
+  .guideline-text-title {
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    padding-right: 20px;
+    margin-top: 14px;
+  }
+  .guideline-text-title::before {
+    top: -14px;
+    left: -12px;
+    width: 382px;
+    height: 183px;
+    z-index: -100;
+  }
+  .form {
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .form-title {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+  }
+  .form-text {
+    margin-top: 10px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .form-sec {
+    margin-top: 87px;
+  }
+  .form-btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 22px 30px;
+  }
+  .form-checkbox-text {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .form-checkbox-text-link {
+    color: #2b59c3;
+  }
+  .guarantee-sec {
+    margin-top: 100px;
+    height: 750px;
+    background-image: url(/assets/images/guarantee-sec-bg-img-992.jpg);
+  }
+  .guarantee-sec-title {
+    margin-top: 97px;
+  }
+  .guarantee-sec-card {
+    width: 180px;
+  }
+  .guarantee-sec-card-box {
+    gap: 7px;
+    margin-top: 94px;
+    flex-wrap: nowrap;
+  }
+  .guarantee-sec-card:nth-child(5) {
+    width: 180px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer-form-box {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .news-card-box {
+    flex-wrap: nowrap;
+    gap: 0 30px;
+  }
+  .news-source {
+    margin-top: 28px;
+    font: 400 normal 14px/1.296 "20 Kopeek";
+  }
+  .license-agreement-text:last-child {
+    margin-bottom: 78px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    position: relative;
+    height: 945px;
+    background: url(/assets/images/bg_header.jpeg) no-repeat center 0/contain, url(/assets/images/bg_header-repeat.jpeg) repeat;
+  }
+  .header-content {
+    margin-top: 237px;
+  }
+  .header-title {
+    font: 400 normal 55px/1 "20 Kopeek";
+    color: #000000;
+  }
+  .header-text {
+    margin-top: 20px;
+    font: 400 normal 34px/1.1 "20 Kopeek";
+    color: #000000;
+  }
+  .header-modal-form-box .modal-form {
+    position: relative;
+    width: 540px;
+    height: 495px;
+    background-color: #ffffff;
+    padding: 0 54px;
+  }
+  .header-modal-form-box .modal-form-text {
+    margin-top: 47px;
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .intro-title {
+    margin-top: 70px;
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .intro-content {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .intro-text {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .brand-style-title {
+    margin-top: 150px;
+    font: 400 normal 55px/1 "20 Kopeek";
+  }
+  .brand-main-elems-container {
+    margin-top: 65px;
+  }
+  .brand-main-elems-item {
+    padding-left: 40px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .brand-main-elems-item::before {
+    font-size: 55px;
+  }
+  .brand-main-elems-comment {
+    width: 260px;
+    font: 400 normal 15px/19px "20 Kopeek";
+  }
+  .price-title {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .price-content {
+    margin-top: 15px;
+    flex-wrap: nowrap;
+  }
+  .price-content-text {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+    padding-right: 52px;
+  }
+  .price-content-text:not(:first-child) {
+    margin-top: 25.2px;
+    position: relative;
+  }
+  .price-content-text:last-child {
+    color: #ffffff;
+  }
+  .price-content-text:last-child::before {
+    top: -10px;
+    left: -13px;
+    width: 416px;
+    height: 93px;
+  }
+  .portfolio {
+    margin-top: 150px;
+  }
+  .portfolio-content-box {
+    margin-top: 38px;
+    padding-bottom: 147px;
+    gap: 89px;
+  }
+  .portfolio-content-box-last {
+    padding-bottom: 100px;
+  }
+  .portfolio-title {
+    font: 400 normal 55px/1 "20 Kopeek";
+  }
+  .portfolio-text {
+    margin-top: 3.5px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .guideline {
+    margin-top: 100px;
+  }
+  .guideline-text {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+    margin-top: 22px;
+    padding-right: 40px;
+  }
+  .guideline-text:first-of-type {
+    padding-right: 55px;
+  }
+  .guideline-text-title {
+    font: 400 normal 26px/1.1 "20 Kopeek";
+    margin-top: 10px;
+  }
+  .guideline-text-title::before {
+    top: -10px;
+    left: -14px;
+    width: 459px;
+    height: 230px;
+  }
+  .form-title {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .form-text {
+    font: 400 normal 26px/1.1 "20 Kopeek";
+  }
+  .form-sec {
+    margin-top: 70px;
+  }
+  .form-btn-box {
+    gap: 25px 30px;
+  }
+  .form-checkbox-text-link {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .guarantee-sec {
+    margin-top: 150px;
+    height: 957px;
+    background-image: url(/assets/images/guarantee-sec-bg-img.jpg);
+  }
+  .guarantee-sec-title {
+    margin-top: 282px;
+    font: 400 normal 55px/1 "20 Kopeek";
+  }
+  .guarantee-sec-card {
+    padding-left: 40px;
+    width: 200px;
+  }
+  .guarantee-sec-card-box {
+    gap: 30px;
+    margin-top: 65px;
+  }
+  .guarantee-sec-card-text {
+    font: 400 normal 15px/1.296 "20 Kopeek";
+  }
+  .guarantee-sec-card::before {
+    font: 400 normal 55px/1 "20 Kopeek";
+    left: 0px;
+    top: -25px;
+  }
+  .guarantee-sec-card:nth-child(5) {
+    width: 200px;
+  }
+  .footer {
+    margin-top: 150px;
+  }
+  .footer-form-subtitle {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .footer-form-input-box {
+    margin-bottom: 21px;
+  }
+  .footer-form-checkbox-text {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .footer-form-list {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .news-title {
+    margin-top: 127px;
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .news-card-box {
+    margin-top: 14px;
+  }
+  .news-card-text {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .news-source {
+    margin-top: 25px;
+    font: 400 normal 15px/1.296 "20 Kopeek";
+  }
+  .author {
+    margin-top: 38px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .license-agreement-link {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+  }
+  .license-agreement-title {
+    margin-top: 90px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text {
+    margin-top: 25px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .license-agreement-text:last-child {
+    margin-bottom: 86px;
+  }
+}
+.navbar {
+  color: white;
+}
+
+@media (min-width: 360px) {
+  .navbar {
+    padding: 27px 0;
+  }
+  .navbar-text {
+    font: 400 normal 12px/1.1 "20 Kopeek";
+    padding-right: 20px;
+  }
+  details {
+    display: block;
+  }
+  details summary {
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 36px;
+    right: 35px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  details summary::after {
+    content: url(/assets/images/burger_open.png);
+  }
+  details summary:hover {
+    transform: scale(110%);
+  }
+  details summary:active {
+    transform: scale(120%);
+  }
+  details[open] .burger-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+  details[open] .burger-menu-close-btn {
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    z-index: 101;
+    cursor: pointer;
+    content: url(/assets/images/burger_close.svg);
+  }
+  details[open] .burger-menu-close-btn:hover {
+    transform: scale(110%);
+  }
+  details[open] .burger-menu-close-btn:active {
+    transform: scale(120%);
+  }
+  details[open] .burger-menu-logo {
+    display: block;
+    margin-top: 42px;
+  }
+  details[open] .burger-menu-logo:hover svg path {
+    transition: 0.2s ease;
+    fill: #2b59c3;
+  }
+  details[open] .burger-menu-logo:active svg path {
+    transition: 0.2s ease;
+    fill: #224699;
+  }
+  details[open] .burger-menu-list {
+    margin-top: 172px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font: 400 normal 35px/1 "20 Kopeek";
+  }
+  details[open] .burger-menu-list-item {
+    color: #000000;
+  }
+  details[open] .burger-menu-list-item a {
+    color: inherit;
+  }
+  details[open] .burger-menu-list-item a:hover {
+    transition: 0.2s ease;
+    color: #224699;
+  }
+  details[open] .burger-menu-list-item a:active {
+    transition: 0.2s ease;
+    color: #224699;
+  }
+  details[open] .soc-network-box {
+    margin-top: 128px;
+    display: flex;
+    gap: 24px;
+  }
+  details[open] .modal-link {
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    color: #000000;
+  }
+  details[open] .modal-link-box {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  details[open] .modal-link:hover {
+    transition: 0.2s ease;
+    color: #2b59c3;
+  }
+  details[open] .modal-link:active {
+    transition: 0.2s ease;
+    color: #224699;
+  }
+}
+@media (min-width: 576px) {
+  .navbar {
+    padding: 26px 0;
+  }
+  .navbar-text {
+    font: 400 normal 12px/1.333 "20 Kopeek";
+    padding-right: 0px;
+  }
+  details[open] .burger-menu {
+    height: 100%;
+  }
+  details[open] .burger-menu-list {
+    margin-top: 82px;
+  }
+  details[open] .soc-network-box {
+    margin-top: 152px;
+  }
+  details[open] .modal-link-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    padding: 27px 0;
+  }
+  .navbar-text {
+    font: 400 normal 14px/1.2957 "20 Kopeek";
+    padding-right: 30px;
+  }
+  details[open] .burger-menu-list {
+    font: 400 normal 45px/1 "20 Kopeek";
+    gap: 35px;
+    margin-top: 103px;
+  }
+  details[open] .soc-network-box {
+    margin-top: 426px;
+  }
+  details[open] .modal-link {
+    transition: 0.2s ease;
+  }
+  details[open] .modal-link-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 97px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    padding: 37px 0;
+  }
+  .navbar-text {
+    font: 400 normal 14px/1.2957 "20 Kopeek";
+    padding-right: 30px;
+  }
+  details {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 32px 0;
+  }
+  .navbar-text {
+    font: 400 normal 15px/1.296 "20 Kopeek";
+    padding-right: 0px;
+  }
+}
+.circle-button {
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.circle-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.circle-button:hover svg path {
+  transition: 0.3s ease;
+  fill: #000000;
+}
+.circle-button:active {
+  border-color: #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.regular-button {
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 204px;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+.regular-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.regular-button:hover svg path {
+  transition: 0.3s ease;
+  fill: #000000;
+}
+.regular-button:active {
+  border-color: #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.more-btn {
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
+  padding: 0px 47px;
+  border: none;
+  background-color: #2b59c3;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  font: 400 normal 26px/1.1 "20 Kopeek";
+  padding: 0;
+  width: 214px;
+}
+.more-btn:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0px 30px 0px #a0a0a0;
+}
+.more-btn:active {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 15px #868686;
+  background-color: #244aa2;
+}
+
+.footer-form-input {
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+@media (min-width: 360px) {
+  .buttons-container {
+    display: none;
+  }
+  .header-button-box {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .header-button-main {
+    width: auto;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 15px/140% "20 Kopeek";
+    color: inherit;
+  }
+  .header-button-main:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .header-button-main:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #ebebeb;
+  }
+  .modal-circle-button {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+  }
+  .modal-circle-button:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .modal-circle-button:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .modal-circle-button:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .portfolio-btn {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 231px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    color: #000000;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .portfolio-btn:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .portfolio-btn:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .portfolio-btn:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .more-btn {
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    height: 61px;
+  }
+  .form-input {
+    box-sizing: border-box;
+    padding: 19px 21px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .form .submit-btn {
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .form .submit-btn:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .form .submit-btn:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+  .footer-form-input {
+    width: 290px;
+    padding: 19px 21px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .footer-form-submit {
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    height: 50px;
+  }
+  .footer-form-submit:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .footer-form-submit:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+  .modal-form-input {
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 290px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 19px 21px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .modal-form-input:nth-child(4) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal-form-close-btn {
+    transition: 0.2s ease;
+    position: absolute;
+    top: -54px;
+    right: 0px;
+    width: 30.4px;
+    height: 30.4px;
+    background: url(/assets/images/modal-form-close.svg) center 0/cover no-repeat;
+    cursor: pointer;
+  }
+  .modal-form-close-btn:hover {
+    transform: scale(110%);
+  }
+  .modal-form-close-btn:active {
+    transform: scale(90%);
+  }
+  .modal-form-submit-btn {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 215px;
+    font: 400 normal 15px/1.4 "20 Kopeek";
+  }
+  .modal-form-submit-btn:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .modal-form-submit-btn:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+}
+@media (min-width: 576px) {
+  .header-button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 15px;
+  }
+  .header-button-main {
+    width: auto;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 15px/140% "20 Kopeek";
+    color: inherit;
+  }
+  .header-button-main:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .header-button-main:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #ebebeb;
+  }
+  .portfolio-btn {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 231px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    color: #000000;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .portfolio-btn:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .portfolio-btn:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .portfolio-btn:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .form-input {
+    width: 380px;
+  }
+  .footer-form-input {
+    width: 380px;
+  }
+  .modal-form-input {
+    width: 388px;
+  }
+  .modal-form-close-btn {
+    top: -42px;
+  }
+}
+@media (min-width: 768px) {
+  .buttons-container {
+    display: none;
+  }
+  .header-button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 65px;
+  }
+  .header-button-main {
+    width: 212px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 16px/140% "20 Kopeek";
+    color: inherit;
+  }
+  .header-button-main:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .header-button-main:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #ebebeb;
+  }
+  .portfolio-btn {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 231px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    color: #000000;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .portfolio-btn:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .portfolio-btn:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .portfolio-btn:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .more-btn {
+    height: 68px;
+  }
+  .form-input {
+    box-sizing: border-box;
+    width: 450px;
+    padding: 19px 21px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .form .submit-btn {
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .form .submit-btn:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .form .submit-btn:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+  .footer-form-input {
+    width: 450px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .footer-form-submit {
+    height: 60px;
+  }
+  .modal-form-input {
+    width: 450px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .modal-form-close-btn {
+    top: -45px;
+    right: -50px;
+    width: 30.4px;
+    height: 30.4px;
+  }
+  .modal-form-submit-btn {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 28px;
+    width: 213px;
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .modal-form-submit-btn:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .modal-form-submit-btn:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+}
+@media (min-width: 992px) {
+  .buttons-container {
+    display: flex;
+    gap: 28px;
+  }
+  .header-button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .header-button-main {
+    width: auto;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 normal 16px/140% "20 Kopeek";
+    color: inherit;
+  }
+  .header-button-main:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .header-button-main:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #ebebeb;
+  }
+  .portfolio-btn {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 231px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    color: #000000;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .portfolio-btn:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .portfolio-btn:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .portfolio-btn:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .form-input {
+    padding: 19px 21px;
+  }
+  .form .submit-btn {
+    font: 400 normal 16px/1.4 "20 Kopeek";
+  }
+  .footer-form-input {
+    width: 370px;
+  }
+  .footer-form-submit {
+    margin-top: 30px;
+  }
+  .modal-form-close-btn {
+    top: -45px;
+    right: -50px;
+    width: 30.4px;
+    height: 30.4px;
+    background: url(/assets/images/modal-form-close.svg) center 0/cover no-repeat;
+  }
+  .modal-form-submit-btn {
+    margin-top: 30px;
+    width: 228px;
+  }
+}
+@media (min-width: 1200px) {
+  .buttons-container {
+    gap: 23px;
+  }
+  .header-button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 55px;
+  }
+  .header-button-main {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font: 400 18px/1.4 "20 Kopeek";
+    color: inherit;
+  }
+  .header-button-main:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .header-button-main:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #ebebeb;
+  }
+  .portfolio-btn {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    width: 231px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    color: #000000;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .portfolio-btn:hover {
+    transition: 0.2s ease;
+    border-color: transparent;
+    background-color: #2b59c3;
+    color: #ffffff;
+  }
+  .portfolio-btn:hover svg path {
+    transition: 0.2s ease-in-out;
+    fill: #ffffff;
+  }
+  .portfolio-btn:active {
+    transition: 0.2s ease;
+    background-color: #244aa2;
+    color: #ffffff;
+  }
+  .more-btn {
+    width: 250px;
+    height: 75px;
+  }
+  .form-input {
+    width: 350px;
+    padding: 23px 29px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .form .submit-btn {
+    margin-top: 0;
+    width: 228px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .footer-form-input {
+    width: 445px;
+    padding: 23px 29px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .footer-form-submit {
+    font: 400 normal 18px/1.4 "20 Kopeek";
+    margin-top: 48px;
+    height: 71px;
+  }
+  .modal-form-input {
+    width: 100%;
+    padding: 23px 29px;
+    font: 400 normal 18px/1.4 "20 Kopeek";
+  }
+  .modal-form-input:nth-child(4) {
+    margin-bottom: 21px;
+  }
+  .modal-form-close-btn {
+    top: -35px;
+    right: -40px;
+  }
+  .modal-form-submit-btn {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+    padding: 0px 47px;
+    border: none;
+    background-color: #2b59c3;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    width: 213px;
+  }
+  .modal-form-submit-btn:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0px 30px 0px #a0a0a0;
+  }
+  .modal-form-submit-btn:active {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px #868686;
+    background-color: #244aa2;
+  }
+}
+@media (min-width: 360px) {
+  .table {
+    display: none;
+  }
+  .guidline-stages-table-box {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+  .guidline-stages-table-box .line {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .guidline-stages-title {
+    margin-top: 100px;
+    font: 400 normal 35px/1 "20 Kopeek";
+  }
+  .guidline-stages-title-v-text {
+    margin-top: 12px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .guidline-stages-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .guidline-stages-cell {
+    width: 130px;
+    font: 400 normal 12px/1.296 "20 Kopeek";
+  }
+  .guidline-stages-cell-title {
+    font: 600 normal 15px/1.4 "20 Kopeek";
+  }
+  .guidline-stages-cell-text {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .guidline-stages-table-box {
+    margin-top: 40px;
+    gap: 50px;
+  }
+  .guidline-stages-table-box .line {
+    gap: 20px;
+  }
+  .guidline-stages-title {
+    margin-top: 90px;
+  }
+  .guidline-stages-title-v-text {
+    margin-top: 15px;
+  }
+  .guidline-stages-content {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .guidline-stages-cell {
+    width: 150px;
+  }
+  .guidline-stages-cell-title {
+    font: 600 normal 16px/1.4 "20 Kopeek";
+  }
+  .guidline-stages-cell-text {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .table {
+    display: table;
+  }
+  .col-first {
+    display: none;
+  }
+  .col-second {
+    width: 210px;
+  }
+  .col-third {
+    width: 242px;
+    border: 4px solid #2b59c3;
+  }
+  .col-third-cell {
+    color: #2b59c3 !important;
+  }
+  .col-fourth {
+    width: 235px;
+  }
+  .bd-top {
+    border-radius: 10px 10px 0 0;
+  }
+  .bd-bottom {
+    border-radius: 0 0 10px 10px;
+  }
+  .title-top {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+    color: #868686;
+  }
+  .title-top td {
+    vertical-align: text-top;
+    padding: 15px 16px;
+  }
+  .title-top td:nth-child(2) {
+    padding-left: 18px;
+  }
+  .title-top td:nth-child(4) {
+    padding-left: 14px;
+  }
+  .title-left {
+    display: none;
+  }
+  .title-hor {
+    display: table-cell;
+    padding-left: 18px;
+    border-radius: 5px;
+    text-align: start;
+    background-color: #2b59c3;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .table {
+    margin-top: 105px;
+  }
+  .table-text {
+    vertical-align: top;
+    font: 400 normal 14px/18px "20 Kopeek";
+  }
+  .second-col {
+    padding: 18px;
+  }
+  .third-col {
+    padding: 18px;
+  }
+  .fourth-col {
+    padding: 18px 14px;
+  }
+  .guidline-stages-table-box {
+    margin-top: 40px;
+    gap: 50px;
+  }
+  .guidline-stages-table-box .line {
+    gap: 18px;
+  }
+  .guidline-stages-title {
+    margin-top: 80px;
+    font: 400 normal 45px/1 "20 Kopeek";
+  }
+  .guidline-stages-title-v-text {
+    margin-top: 17px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .guidline-stages-cell {
+    width: 166px;
+    font: 400 normal 14px/1.296 "20 Kopeek";
+  }
+  .guidline-stages-cell-title {
+    font: 600 normal 16px/1.4 "20 Kopeek";
+    padding-right: 15px;
+  }
+  .guidline-stages-cell-text {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .col-first {
+    display: table-column;
+    background-color: #2b59c3;
+    width: 146px;
+  }
+  .col-second {
+    width: 251px;
+  }
+  .col-third {
+    width: 243px;
+    border: 4px solid #2b59c3;
+  }
+  .col-third-cell {
+    color: #2b59c3 !important;
+  }
+  .col-fourth {
+    width: 236px;
+  }
+  .bd-top {
+    border-radius: 10px 10px 0 0;
+  }
+  .bd-bottom {
+    border-radius: 0 0 10px 10px;
+  }
+  .title-top {
+    font: 400 normal 34px/1.1 "20 Kopeek";
+    color: #868686;
+  }
+  .title-top td {
+    vertical-align: text-top;
+    padding: 14px 18px 6px;
+  }
+  .title-top td:nth-child(2) {
+    padding-left: 30px;
+  }
+  .title-top td:nth-child(4) {
+    padding-left: 15px;
+  }
+  .title-left {
+    display: table-cell;
+    vertical-align: top;
+    padding: 26px 15px;
+    padding-right: 20px;
+    text-align: start;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .title-hor {
+    display: none;
+    padding-left: 18px;
+    border-radius: 5px;
+    text-align: start;
+    background-color: #2b59c3;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .table {
+    margin-top: 135px;
+  }
+  .table-text {
+    vertical-align: top;
+    font: 400 normal 14px/18px "20 Kopeek";
+  }
+  .second-col {
+    padding: 26px 12px 26px 30px;
+  }
+  .third-col {
+    padding: 26px 15px 26px 18px;
+  }
+  .fourth-col {
+    padding: 26px 12px 26px 15px;
+  }
+  .guidline-stages-table-box {
+    margin-top: 87px;
+    gap: 60px;
+  }
+  .guidline-stages-table-box .line {
+    flex-direction: row;
+  }
+  .guidline-stages-title {
+    margin-top: 100px;
+  }
+  .guidline-stages-title-v-text {
+    margin-top: 26px;
+    font: 400 normal 20px/1.1 "20 Kopeek";
+  }
+  .guidline-stages-content {
+    gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-first {
+    background-color: #2b59c3;
+    width: 160px;
+  }
+  .col-second {
+    width: 296px;
+  }
+  .col-third {
+    width: 289px;
+    border: 4px solid #2b59c3;
+  }
+  .col-third-cell {
+    color: #2b59c3 !important;
+  }
+  .col-fourth {
+    width: 375px;
+  }
+  .bd-top {
+    border-radius: 10px 10px 0 0;
+  }
+  .bd-bottom {
+    border-radius: 0 0 10px 10px;
+  }
+  .title-top {
+    font: 400 normal 38px/1.1 "20 Kopeek";
+    color: #868686;
+  }
+  .title-top td {
+    vertical-align: text-top;
+    padding: 15px 30px 6px 19px;
+  }
+  .title-top td:nth-child(2) {
+    padding-left: 30px;
+  }
+  .title-top td:nth-child(4) {
+    padding-left: 15px;
+  }
+  .title-left {
+    vertical-align: top;
+    padding: 20px 10px;
+    text-align: start;
+    font: 400 normal 26px/1.1 "20 Kopeek";
+    color: #ffffff;
+  }
+  .title-hor {
+    display: none;
+  }
+  .table {
+    margin-top: 165px;
+  }
+  .table-text {
+    vertical-align: top;
+    font: 400 normal 15px/1.267 "20 Kopeek";
+  }
+  .second-col {
+    padding: 26px 6px 26px 30px;
+  }
+  .third-col {
+    padding: 26px 10px 26px 19px;
+  }
+  .fourth-col {
+    padding: 26px 100px 26px 15px;
+  }
+  .guidline-stages-table-box {
+    margin-top: 80px;
+  }
+  .guidline-stages-title {
+    margin-top: 150px;
+    font: 400 normal 55px/1 "20 Kopeek";
+  }
+  .guidline-stages-title-v-text {
+    margin-top: 22px;
+    font: 400 normal 26px/1.1 "20 Kopeek";
+  }
+  .guidline-stages-content {
+    gap: 30px;
+  }
+  .guidline-stages-cell {
+    width: 166px;
+    font: 400 normal 15px/1.296 "20 Kopeek";
+  }
+  .guidline-stages-cell-title {
+    font: 600 normal 18px/1.4 "20 Kopeek";
+    padding-right: 0;
+  }
+  .guidline-stages-cell-text {
+    margin-top: 15px;
+  }
+}

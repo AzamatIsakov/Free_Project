@@ -1,0 +1,221 @@
+.navbar {
+  color: white;
+}
+
+@include xs {
+  .navbar {
+    padding: 27px 0;
+    &-text {
+      font: 400 normal 12px/1.1 "20 Kopeek";
+      padding-right: 20px;
+    }
+  }
+  details {
+    display: block;
+    summary {
+      transition: transform 0.3s ease;
+      position: absolute;
+      top: 36px;
+      right: 35px;
+      list-style-type: none;
+      cursor: pointer;
+
+      &::after {
+        content: url(/assets/images/burger_open.png);
+      }
+      &:hover {
+        transform: scale(110%);
+      }
+      &:active {
+        transform: scale(120%);
+      }
+    }
+  }
+  details[open] {
+    // &::after {
+    // }
+    // &:hover {
+    //   transform: scale(110%);
+    // }
+    // &:active {
+    //   transform: scale(120%);
+    // }
+    // }
+    .burger-menu {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: scroll;
+      top: 0;
+      left: 0;
+      background-color: $white;
+      z-index: 100;
+      &-close-btn {
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 45px;
+        right: 35px;
+        z-index: 101;
+        cursor: pointer;
+
+        content: url(/assets/images/burger_close.svg);
+        &:hover {
+          transform: scale(110%);
+        }
+        &:active {
+          transform: scale(120%);
+        }
+      }
+      &-logo {
+        display: block;
+        margin-top: 42px;
+        &:hover svg path {
+          transition: 0.2s ease;
+          fill: $primary-blue;
+        }
+        &:active svg path {
+          transition: 0.2s ease;
+          fill: darken($primary-blue, 10%);
+        }
+      }
+      &-list {
+        margin-top: 172px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font: 400 normal 35px/1 "20 Kopeek";
+        &-item {
+          color: $black;
+          a {
+            color: inherit;
+            &:hover {
+              transition: 0.2s ease;
+              color: darken($primary-blue, 10%);
+            }
+            &:active {
+              transition: 0.2s ease;
+              color: darken($primary-blue, 10%);
+            }
+          }
+        }
+      }
+    }
+    .soc {
+      &-network-box {
+        margin-top: 128px;
+        display: flex;
+        gap: 24px;
+      }
+    }
+    .modal {
+      &-link {
+        &-box {
+          margin-top: 20px;
+          margin-bottom: 24px;
+        }
+        font: 400 normal 20px/1.1 "20 Kopeek";
+        color: $black;
+        &:hover {
+          transition: 0.2s ease;
+          color: $primary-blue;
+        }
+        &:active {
+          transition: 0.2s ease;
+          color: darken($primary-blue, 10%);
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .navbar {
+    padding: 26px 0;
+    &-text {
+      font: 400 normal 12px/1.333 "20 Kopeek";
+      padding-right: 0px;
+    }
+  }
+
+  details[open] {
+    .burger-menu {
+      height: 100%;
+      &-list {
+        margin-top: 82px;
+      }
+    }
+    .soc {
+      &-network-box {
+        margin-top: 152px;
+      }
+    }
+    .modal {
+      &-link {
+        &-box {
+          display: flex;
+          flex-direction: column;
+          margin-top: 25px;
+          margin-bottom: 38px;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .navbar {
+    padding: 27px 0;
+    &-text {
+      font: 400 normal 14px/1.2957 "20 Kopeek";
+      padding-right: 30px;
+    }
+  }
+  details[open] {
+    .burger-menu {
+      &-list {
+        font: 400 normal 45px/1 "20 Kopeek";
+        gap: 35px;
+        margin-top: 103px;
+      }
+    }
+    .soc {
+      &-network-box {
+        margin-top: 426px;
+      }
+    }
+    .modal {
+      &-link {
+        transition: 0.2s ease;
+        &-box {
+          display: flex;
+          flex-direction: column;
+          margin-top: 30px;
+          margin-bottom: 97px;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  .navbar {
+    padding: 37px 0;
+    &-text {
+      font: 400 normal 14px/1.2957 "20 Kopeek";
+      padding-right: 30px;
+    }
+  }
+  details {
+    display: none;
+  }
+}
+
+@include xl {
+  .navbar {
+    padding: 32px 0;
+    &-text {
+      font: 400 normal 15px/1.296 "20 Kopeek";
+      padding-right: 0px;
+    }
+  }
+}
